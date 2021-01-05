@@ -25,16 +25,14 @@
       <link rel="stylesheet" href="assets/css/sections/recent-posts.css"/>
       <link rel="stylesheet" href="assets/css/sections/achievements.css"/>
       <link rel="stylesheet" href="/css/style.css">
-      <script type="application/javascript">
-         var doNotTrack = false;
-         if (!doNotTrack) {
-          window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-          ga('create', 'UA-186339968-1', 'auto');
-          
-          ga('send', 'pageview');
-         }
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-186339968-1"></script>
+      <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'UA-186339968-1');
       </script>
-      <script async src='https://www.google-analytics.com/analytics.js'></script>
    </head>
    <body data-spy="scroll" data-target="#top-navbar" data-offset="100">
       <nav class="navbar navbar-expand-xl top-navbar initial-navbar" id="top-navbar">
