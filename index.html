@@ -31,8 +31,16 @@
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
+
             gtag('config', 'UA-186339968-1');
-      </script>
+
+            // Force https
+            if (location.protocol != 'https:')
+            {
+             // Comment out this for local tests
+            document.location="https:" + window.location.href.substring(window.location.protocol.length, window.location.href.length);
+            }
+       </script>
    </head>
    <body data-spy="scroll" data-target="#top-navbar" data-offset="100">
       <nav class="navbar navbar-expand-xl top-navbar initial-navbar" id="top-navbar">
